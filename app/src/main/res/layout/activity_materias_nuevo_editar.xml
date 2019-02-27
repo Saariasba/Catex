@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MateriasNuevoEditar">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="60dp"
+                app:srcCompat="@drawable/materias" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/colorPrimaryDark">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimaryDark">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/colorPrimary">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginTop="20dp"
+                                        android:text="Inicio"
+                                        android:textColor="#000"
+                                        android:textSize="15dp"
+                                        android:textStyle="bold" />
+
+                                    <EditText
+                                        android:id="@+id/valor"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="8dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginRight="8dp"
+                                        android:ems="5"
+                                        android:inputType="number"
+                                        android:textColor="#000"
+                                        android:textSize="15dp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginTop="20dp"
+                                        android:text=":"
+                                        android:textColor="#000"
+                                        android:textSize="25dp"
+                                        android:textStyle="bold" />
+
+                                    <EditText
+                                        android:id="@+id/porcentaje"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="8dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginRight="8dp"
+                                        android:ems="5"
+                                        android:inputType="number"
+                                        android:textColor="#000"
+                                        android:textSize="15dp"
+                                        android:textStyle="bold" />
+
+                                    <RadioGroup
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp">
+
+                                        <RadioButton
+                                            android:id="@+id/RadioButton1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:buttonTint="@color/colorPrimaryDark"
+                                            android:text="AM"
+                                            android:textSize="20dp" />
+
+                                        <RadioButton
+                                            android:id="@+id/RadioButton2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:buttonTint="@color/colorPrimaryDark"
+                                            android:text="PM"
+                                            android:textSize="20dp" />
+                                    </RadioGroup>
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimaryDark">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/colorPrimary">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="15dp"
+                                        android:layout_marginRight="18dp"
+                                        android:layout_marginTop="20dp"
+                                        android:text="Fin"
+                                        android:textColor="#000"
+                                        android:textSize="15dp"
+                                        android:textStyle="bold" />
+
+                                    <EditText
+                                        android:id="@+id/valor2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="8dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginRight="8dp"
+                                        android:ems="5"
+                                        android:inputType="number"
+                                        android:textColor="#000"
+                                        android:textSize="15dp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginTop="20dp"
+                                        android:text=":"
+                                        android:textColor="#000"
+                                        android:textSize="25dp"
+                                        android:textStyle="bold" />
+
+                                    <EditText
+                                        android:id="@+id/porcentaje2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="8dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginRight="8dp"
+                                        android:ems="5"
+                                        android:inputType="number"
+                                        android:textColor="#000"
+                                        android:textSize="15dp"
+                                        android:textStyle="bold" />
+
+                                    <RadioGroup
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp">
+
+                                        <RadioButton
+                                            android:id="@+id/RadioButton3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:buttonTint="@color/colorPrimaryDark"
+                                            android:text="AM"
+                                            android:textSize="20dp" />
+
+                                        <RadioButton
+                                            android:id="@+id/RadioButton4"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:buttonTint="@color/colorPrimaryDark"
+                                            android:text="PM"
+                                            android:textSize="20dp" />
+                                    </RadioGroup>
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimaryDark">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/colorPrimary">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp">
+
+                                    <Button
+                                        android:id="@+id/button"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginRight="25dp"
+                                        android:layout_toLeftOf="@+id/textView"
+                                        android:background="@color/colorPrimaryDark"
+                                        android:text="Volver" />
+
+                                    <TextView
+                                        android:id="@+id/textView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true" />
+
+                                    <Button
+                                        android:id="@+id/button2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginLeft="25dp"
+                                        android:layout_toRightOf="@+id/textView"
+                                        android:background="@color/colorPrimaryDark"
+                                        android:text="Guardar" />
+
+                                </RelativeLayout>
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
